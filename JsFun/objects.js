@@ -43,19 +43,33 @@ obj1.name = "pushpa shamra";
 //********note about to add function in object  *********/
 
 obj1.fun1 = function(){
-    console.log("hi Js learner function im object");
+    // console.log("hi Js learner function im object");
 }
 
 // console.log(obj1.fun1());
 
 obj1.fun2 = function(){
-    console.log(`hello tannu are you , ${this.name}`);
+    // console.log(`hello tannu are you , ${this.name}`);
 }
 
 console.log(obj1.fun2());
 
 obj1.fun3 = function(){
-    console.log(`yes I am  , ${this.name}`);
+    // console.log(`yes I am  , ${this.name}`);
 }
 
-console.log(obj1.fun3());
+// console.log(obj1.fun3());
+
+//***********note learn how to ""data structuring"" ****** */
+
+const course = {
+    coursename : "webdesingnig",
+    hours : "2 hours",
+    fees : 1200,
+}
+
+// console.log(course.hours);   
+
+const {hours : time} = course   //this is a data structuring // if "'name of keys""" are big then you make them short with colon
+
+console.log(time);
